@@ -1,11 +1,8 @@
 import React from 'react';
 
-export default function Form({name,setName, account, setAccount, month, setMonth, year, setYear, cvc, setCvc}) {
+export default function Form({name,setName, account, setAccount, month, setMonth, year, setYear, cvc, setCvc, confirm, setConfirm}) {
   const formatCardNumber = (input) => {
-    // Remove non-digit characters
     const digitsOnly = input.replace(/\D/g, '');
-    
-    // Format the card number with spaces
     const formattedNumber = digitsOnly.replace(/(\d{4})/g, '$1 ').trim();
     
     return formattedNumber;
@@ -29,7 +26,7 @@ export default function Form({name,setName, account, setAccount, month, setMonth
                 <input type="text" value={cvc} onChange={(e)=>{setCvc(e.target.value)}} className='w-full h-[2.8rem] text-[1.1rem] outline-none border rounded-lg border-light-violet focus:border-dark-violet px-[1rem] font-space' placeholder='e.g. 123'/>
             </div>
         </div>
-        <button className='w-[24rem] h-[3.3rem] bg-very-dark-violet text-light-violet font-space rounded-lg my-[2rem] hover:bg-dark-violet'>Confirm</button>
+        <button className='w-[24rem] h-[3.3rem] bg-very-dark-violet text-light-violet font-space rounded-lg my-[2rem] hover:bg-dark-violet' onClick={()=>setConfirm(!confirm)}>Confirm</button>
     </section>
   )
 }
