@@ -5,6 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens:{
+      'sm': "640px",
+      'xmd':"750px",
+      'md': "768px",
+      'lg': "1024px",
+      'xl': "1180px",
+      'xs':"460px",
+      'xxs': "430px",
+      'xxxs': "360px"
+    },
     extend: {
       colors:{
         "light-violet": "hsl(270, 3%, 87%)",
@@ -28,7 +38,8 @@ export default {
         '50%': '50%',
         '16': '4rem',
         "desk": "33.55% 100%",
-        "mobile": "100% 15rem"
+        "mobile": "100% 15rem",
+        "tablet": "100% 33.55%"
       }
     },
   },
