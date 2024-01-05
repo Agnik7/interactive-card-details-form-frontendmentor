@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-card-details-form-using-reactjs-and-tailwindcss-7T8pbRH0u9)
+- Live Site URL: [Live Site](https://interactive-card-details-form-frontendmentor.vercel.app/)
 
 ## My process
 
